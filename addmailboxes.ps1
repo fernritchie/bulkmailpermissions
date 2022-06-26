@@ -1,5 +1,13 @@
+# This will prompt you to enter tenancy credentials
+# You must have the correct administrative rights
+
 Connect-ExchangeOnline 
+
+# This will import necessary modules
+
 Import-Module ExchangeOnlineManagement
+
+# This will create variable "sharedboxes" and store the new path of a cSV file within
 
 $sharedboxes = Import-Csv C:\Users\fern.ritchie\Desktop\test.csv # specify path of csv to import
 
